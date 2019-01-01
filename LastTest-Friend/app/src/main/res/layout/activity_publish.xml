@@ -1,0 +1,157 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#ffffffff"
+    tools:context="com.example.zyj.lasttest.Publish">
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:id="@+id/cancel_button"
+        android:text="取消"
+        android:background="@drawable/publish_button_style"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_text"
+        android:layout_marginTop="5dp"
+        android:text="发表文字"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:id="@+id/publish_button"
+        android:layout_alignParentRight="true"
+        android:text="发表"
+        android:textColor="#ff1dad1c"
+        android:background="@drawable/publish_button_style"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_text"
+        android:layout_below="@+id/title_text"
+        android:layout_centerHorizontal="true"
+        android:gravity="top"
+        android:layout_marginTop="25dp"
+        android:ems="14"
+        android:lines="5"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/edit_text"
+        >
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:id="@+id/ad_img"
+            android:background="@drawable/add"
+            android:layout_marginTop="9dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="2dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/address_text"
+            android:layout_marginTop="8dp"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/ad_img"
+            android:text="所在位置"/>
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:onClick="otherButton"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/publish_button_style"
+            android:text=">"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/relativeLayout1"
+        >
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:id="@+id/who_img"
+            android:background="@drawable/who"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="2dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/see_text"
+            android:layout_marginTop="8dp"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/who_img"
+            android:text="谁可以看"/>
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:onClick="otherButton"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/publish_button_style"
+            android:text=">"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout3"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/relativeLayout2"
+        >
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:id="@+id/ante_img"
+            android:background="@drawable/aite"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="2dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/remind_text"
+            android:layout_marginTop="8dp"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/ante_img"
+            android:text="提醒谁看"/>
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:onClick="otherButton"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/publish_button_style"
+            android:text=">"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout3"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/qq_img"
+        android:background="@drawable/kongjian"
+        android:layout_marginTop="11dp"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>
